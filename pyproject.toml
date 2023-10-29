@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "strana-test"
+version = "0.1.0"
+description = ""
+authors = ["qodize <vladislav.gusev.dev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.0"
+SQLAlchemy = "^2.0.22"
+dependency-injector = "^4.41.0"
+uvicorn = "^0.23.2"
+asyncpg = "^0.28.0"
+alembic = "^1.12.1"
+pydantic = "^2.4.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+anyio = "^3.7.1"
+httpx = "^0.25.0"
+psycopg2 = "^2.9.9"
+trio = "^0.22.2"
+pytest-postgresql = "^5.0.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
